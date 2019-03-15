@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbarTitle = (Toolbar) findViewById(R.id.toolbarTitle);
         setSupportActionBar(toolbarTitle);
-        getSupportActionBar().setTitle("Top 15 test");
+        getSupportActionBar().setTitle("Top 1500 test");
 
 
         FloatingActionButton myFab = (FloatingActionButton) findViewById(R.id.fab);
