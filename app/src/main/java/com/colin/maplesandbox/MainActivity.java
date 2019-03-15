@@ -24,30 +24,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbarTitle);
-        setSupportActionBar(toolbar);
+
 
         result = (EditText) findViewById(R.id.editTextDialogUserInput);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
+
+        //Changer titre du toolbar
         Toolbar toolbarTitle = (Toolbar) findViewById(R.id.toolbarTitle);
         setSupportActionBar(toolbarTitle);
         getSupportActionBar().setTitle("Top 1500 test");
 
-
+        //Bouton add
         FloatingActionButton myFab = (FloatingActionButton) findViewById(R.id.fab);
         myFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("TEST","Fab clicked");
                 createCategorie();
             }
         });
